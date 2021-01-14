@@ -1,6 +1,7 @@
 package com.lucasmonteiro.crud.services;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,13 @@ public class ClientService {
 	public List<ClientDTO> findAll() {
 		List<Client> clients = repository.findAll();
 		return clients.stream().map(client -> new ClientDTO(client)).collect(Collectors.toList());
+	}
+	
+	@Transactional(readOnly = true)
+	public ClientDTO findById(Long id) {
+		Optional<Client> obj = repository.findById(id);
+		Client client = obj.orElse(null);
+		return new ClientDTO(client);
 	}
 
 }
