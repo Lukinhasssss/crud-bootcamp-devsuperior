@@ -6,5 +6,5 @@ INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Izuko M
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Levi Ackerman', '58461275982', 3500.00, TIMESTAMP WITH TIME ZONE '1993-08-26', 2)
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Shigaraki Tomura', '19738649180', 800.00, TIMESTAMP WITH TIME ZONE '1998-11-03', 0)
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Kakashi Hatake', '40028922011', 2900.00, TIMESTAMP WITH TIME ZONE '1973-12-08', 3)
-INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Sakura Haruto', '33018446298', 3100.00, TIMESTAMP WITH TIME ZONE '1990-03-06', 1)
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Sakura Haruno', '33018446298', 3100.00, TIMESTAMP WITH TIME ZONE '1990-03-06', 1)
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Sarada Uchiha', '98745392216', 1520.00, TIMESTAMP WITH TIME ZONE '2002-06-30', 0)
