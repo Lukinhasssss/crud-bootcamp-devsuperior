@@ -44,5 +44,18 @@ public class ClientService {
 		client = repository.save(client);
 		return new ClientDTO(client);
 	}
+	
+	@Transactional
+	public ClientDTO update(Long id, ClientDTO clientDTO) {
+		Client client = repository.getOne(id);
+		
+		client.setName(clientDTO.getName());
+		client.setCpf(clientDTO.getCpf());
+		client.setIncome(clientDTO.getIncome());
+		client.setBirthDate(clientDTO.getBirthDate());
+		client.setChildren(clientDTO.getChildren());
+		
+		return new ClientDTO(client);
+	}
 
 }
